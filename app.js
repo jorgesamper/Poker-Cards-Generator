@@ -78,7 +78,7 @@ function generateDOMCard() { // llamamos a generateDOMCard() para generar una nu
 
   // Sabemos que siempre nos dará un array, pero nosotros solo queremos el primero
   const htmlNumberCollection = document.getElementsByClassName("card-text"); //  Selecciona todos los elementos en el DOM que tienen la clase "card-text" y los almacena en la variable htmlNumberCollection.
-                                                                             // sabemos que solo hay un elemento con esta clase, se utiliza getElementsByClassName() para obtener una colección de elementos y poder acceder al primer elemento posteriormente.
+  // Utilizamos getElementsByClassName() para obtener una colección de elementos y poder acceder al primer elemento posteriormente.
   const htmlNumber = htmlNumberCollection.item(0); // se selecciona el primer elemento y se almacena en la variable htmlNumber. Esto es necesario porque getElementsByClassName() devuelve una colección, y necesitamos acceder al elemento específico para mostrar el valor de la carta.
   htmlNumber.innerHTML = newCardValues.valorAleatorio; // Actualiza el contenido del elemento htmlNumber con el valor aleatorio de la carta (newCardValues.valorAleatorio). Esto mostrará el valor de la carta en el DOM
 }
