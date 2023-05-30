@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>POKER CARDS.js</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -11,56 +11,39 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-pzjw8f+ua9+ukzCqztyK8TAJS5opaP9aJ6peDfbl1xuJTSM+C+qEYD9o+OpXuPj3"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <script src="./app.js"></script>
   </head>
-  <body class="bg-success">
-    <div id="card-body" class="container-fluid text-center bg-white p-5">
-      <p class="card-suit">♣</p>
-      <p id="card-number">5</p>
-      <p class="card-suit">♣</p>
-    </div>
-  </div>
-  <div class="d-flex justify-content-center align-items-center vh-15">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-sm-6">
-          <input
-            id="card-heigth"
-            class="form-control"
-            placeholder="Height"
-            type="number"
-          />
+  <body class="body">
+    <!-- tittle -->
+    <div class="container-fluid text-center">
+      <h1 class="mt-5" style="color:rgb(241, 233, 0)">P O K E R - C A R D S</h1>
+
+      <!-- card -->
+      <div class="card">
+        <div class="upper-left">
+          <h5 class="card-title" id="palo">♣</h5>
         </div>
-        <div class="col-sm-6">
-          <input
-            id="card-width"
-            class="form-control"
-            placeholder="Width"
-            type="number"
-          />
+
+        <p class="card-text" id="num">Nº</p>
+
+        <div class="bottom-right">
+          <h5 class="card-title" id="palo">♣</h5>
         </div>
       </div>
-    </div>
-  </div>
-  
-  <div class="text-center mt-3">
-    <button class="btn btn-primary" id="new-card">
-      Give me a card
-    </button>
-  </div>
-    <!-- Bootstrap JS -->
 
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-pzjw8f+ua9+ukzCqztyK8TAJS5opaP9aJ6peDfbl1xuJTSM+C+qEYD9o+OpXuPj3"
-      crossorigin="anonymous"
-    ></script>
+      <!-- btn -->
+
+      <button id="push-to-generate" class="custom-btn">
+        Push to generate
+      </button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
